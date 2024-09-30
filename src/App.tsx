@@ -14,6 +14,8 @@ import { nodesConfig } from "./config/site";
 import useStore from "./config/store";
 import { handleDragOver, handleOnDrop } from "./lib/utils";
 import "./App.css";
+import DownloadButton from "./components/panels/Download";
+import { Flex } from "antd";
 
 interface CustomNode extends Node {
   id: string;
@@ -137,6 +139,7 @@ export default function App() {
           >
             <Controls />
             <Background variant={BackgroundVariant.Dots} gap={12} size={1} />
+            <DownloadButton />
           </ReactFlow>
         </div>
        <div className="w-[303px]" >
