@@ -45,7 +45,7 @@ const DownloadButton: React.FC = () => {
 
   return (
     <Panel position="top-right">
-      <Button  onClick={onClick} type='primary'>
+      <Button  onClick={onClick} type='primary' style={{backgroundColor:"#0F3B48"}}>
         Download Image
       </Button>
     </Panel>
